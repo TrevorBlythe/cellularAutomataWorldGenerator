@@ -101,158 +101,158 @@ var pProps = [
 		radiates: -0.5,
 	},
 	// //7
-	// {
-	// 	name: "dirt",
-	// 	bouyancy: 0.8,
-	// 	falls: 0,
-	// 	s: "s",
-	// 	resx: 200,
-	// 	resy: 200,
-	// 	scale: 4,
-	// 	texture: 13,
-	// 	color: [210, 105, 30],
-	// 	radiates: 0,
-	// },
-	// //8
-	// {
-	// 	name: "grass",
-	// 	bouyancy: 0.7,
-	// 	falls: 0,
-	// 	s: "s",
-	// 	color: [0, 255, 0],
-	// 	radiates: 0,
-	// 	stateChange: [13, 9, 0.51, 0, 0.3],
-	// 	mixes: [3, 9.5, 9.5],
-	// },
-	// //9
-	// {
-	// 	name: "fire",
-	// 	bouyancy: 0.9,
-	// 	falls: -1,
-	// 	s: "g",
-	// 	color: [255, 0, 0],
-	// 	radiates: 0.2,
-	// 	stateChange: [11, 11, 0, 1, 0.1],
-	// },
-	// //10
-	// {
-	// 	name: "smoke",
-	// 	bouyancy: 1,
-	// 	falls: -1,
-	// 	s: "g",
-	// 	color: [100, 100, 100],
-	// 	radiates: 0.05,
-	// 	stateChange: [1, 1, 1, 1, 0.11],
-	// },
-	// //11
-	// {
-	// 	name: "mud",
-	// 	bouyancy: 1,
-	// 	falls: 0,
-	// 	s: "s",
-	// 	color: [101, 67, 33],
-	// 	radiates: 0,
-	// 	stateChange: [8, 12, 0.7, 0, 0.9],
-	// },
-	// //12
-	// {
-	// 	name: "burning",
-	// 	bouyancy: 0.5,
-	// 	falls: 1,
-	// 	s: "g",
-	// 	color: [200, 0, 0],
-	// 	radiates: 0.1,
-	// 	mixes: [1, 13, 10],
-	// 	stateChange: [1, 1, 1, 1, 0.5],
-	// },
-	// //13
-	// {
-	// 	name: "gravel",
-	// 	bouyancy: 1,
-	// 	falls: 1,
-	// 	s: "s",
-	// 	color: [170, 170, 170],
-	// 	stateChange: [4, 5, 0.7, 0, 0.1],
-	// 	radiates: 0,
-	// },
-	// //14
-	// {
-	// 	name: "dust",
-	// 	bouyancy: 1,
-	// 	falls: -1,
-	// 	s: "g",
-	// 	color: [170, 170, 170],
-	// 	stateChange: [1, 1, 0, 1, 0.1],
-	// 	radiates: 0,
-	// },
-	// //15
+	{
+		name: "dirt",
+		bouyancy: 0.8,
+		falls: 0,
+		s: "s",
+		resx: 200,
+		resy: 200,
+		scale: 4,
+		texture: 13,
+		color: [210, 105, 30],
+		radiates: 0,
+	},
+	//8
+	{
+		name: "grass",
+		bouyancy: 0.7,
+		falls: 0,
+		s: "s",
+		color: [0, 255, 0],
+		radiates: 0,
+		stateChange: [13, 9, 0.51, 0, 0.3],
+		mixes: [3, 9.5, 9.5],
+	},
+	//9
+	{
+		name: "fire",
+		bouyancy: 0.9,
+		falls: -1,
+		s: "g",
+		color: [255, 0, 0],
+		radiates: 0.2,
+		stateChange: [11, 11, 0, 1, 0.1],
+	},
+	//10
+	{
+		name: "smoke",
+		bouyancy: 1,
+		falls: -1,
+		s: "g",
+		color: [100, 100, 100],
+		radiates: 0.05,
+		stateChange: [1, 1, 1, 1, 0.11],
+	},
+	//11
+	{
+		name: "mud",
+		bouyancy: 1,
+		falls: 0,
+		s: "s",
+		color: [101, 67, 33],
+		radiates: 0,
+		stateChange: [8, 12, 0.7, 0, 0.9],
+	},
+	//12
+	{
+		name: "burning",
+		bouyancy: 0.5,
+		falls: 1,
+		s: "g",
+		color: [200, 0, 0],
+		radiates: 0.1,
+		mixes: [1, 13, 10],
+		stateChange: [1, 1, 1, 1, 0.5],
+	},
+	//13
+	{
+		name: "gravel",
+		bouyancy: 1,
+		falls: 1,
+		s: "s",
+		color: [170, 170, 170],
+		stateChange: [4, 5, 0.7, 0, 0.1],
+		radiates: 0,
+	},
+	//14
+	{
+		name: "dust",
+		bouyancy: 1,
+		falls: -1,
+		s: "g",
+		color: [170, 170, 170],
+		stateChange: [1, 1, 0, 1, 0.1],
+		radiates: 0,
+	},
+	//15
 
-	// {
-	// 	name: "explosionDense",
-	// 	bouyancy: 1,
-	// 	falls: 0,
-	// 	s: "g",
-	// 	color: [245, 19, 2],
-	// 	radiates: 0.5,
-	// 	mixes: [1, 17.5, 17.5],
-	// },
-	// //16
-	// {
-	// 	name: "explosionMedium",
-	// 	bouyancy: 0.4,
-	// 	falls: 0,
-	// 	s: "g",
-	// 	color: [212, 66, 17],
-	// 	radiates: 0.5,
-	// 	mixes: [1, 18.5, 18.5],
-	// },
-	// //17
-	// {
-	// 	name: "explosionLight",
-	// 	bouyancy: 0,
-	// 	falls: 0,
-	// 	s: "g",
-	// 	color: [219, 150, 11],
-	// 	radiates: 0.3,
-	// 	mixes: [1, 10.5, 10.5, 8, 1.5, 1.5],
-	// },
-	// //18
-	// {
-	// 	name: "brick",
-	// 	bouyancy: 1,
-	// 	falls: 0,
-	// 	s: "s",
-	// 	color: [150, 150, 150],
-	// 	texture: 30, //12, //3,
-	// 	resx: 250,
-	// 	resy: 250,
-	// 	scale: 5,
-	// 	radiates: 0,
-	// 	// stateChange: [16, 19, 0, -1, 0.001],
-	// },
-	// //19
+	{
+		name: "explosionDense",
+		bouyancy: 1,
+		falls: 0,
+		s: "g",
+		color: [245, 19, 2],
+		radiates: 0.5,
+		mixes: [1, 17.5, 17.5],
+	},
+	//16
+	{
+		name: "explosionMedium",
+		bouyancy: 0.4,
+		falls: 0,
+		s: "g",
+		color: [212, 66, 17],
+		radiates: 0.5,
+		mixes: [1, 18.5, 18.5],
+	},
+	//17
+	{
+		name: "explosionLight",
+		bouyancy: 0,
+		falls: 0,
+		s: "g",
+		color: [219, 150, 11],
+		radiates: 0.3,
+		mixes: [1, 10.5, 10.5, 8, 1.5, 1.5],
+	},
+	//18
+	{
+		name: "brick",
+		bouyancy: 1,
+		falls: 0,
+		s: "s",
+		color: [150, 150, 150],
+		texture: 30, //12, //3,
+		resx: 250,
+		resy: 250,
+		scale: 5,
+		radiates: 0,
+		// stateChange: [16, 19, 0, -1, 0.001],
+	},
+	//19
 
-	// {
-	// 	name: "poison",
-	// 	bouyancy: 1,
-	// 	falls: 0,
-	// 	s: "g",
-	// 	color: [250, 0, 250],
-	// 	scale: 5,
-	// 	radiates: 0,
-	// 	stateChange: [16, 16, 0, 0, 0.001],
-	// 	mixes: [3, 2, 2],
-	// },
-	// //20
-	// {
-	// 	name: "static ice",
-	// 	bouyancy: 0.2,
-	// 	falls: 0,
-	// 	s: "s",
-	// 	stateChange: [3, 7, 0.2, -0.9, 0.5],
-	// 	color: [200, 200, 255],
-	// 	radiates: -0.5,
-	// },
+	{
+		name: "poison",
+		bouyancy: 1,
+		falls: 0,
+		s: "g",
+		color: [250, 0, 250],
+		scale: 5,
+		radiates: 0,
+		stateChange: [16, 16, 0, 0, 0.001],
+		mixes: [3, 2, 2],
+	},
+	//20
+	{
+		name: "static ice",
+		bouyancy: 0.2,
+		falls: 0,
+		s: "s",
+		stateChange: [3, 7, 0.2, -0.9, 0.5],
+		color: [200, 200, 255],
+		radiates: -0.5,
+	},
 	// //21
 ];
 
