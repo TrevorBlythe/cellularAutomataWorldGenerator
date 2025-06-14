@@ -7,10 +7,11 @@
 				font-family: eightbit;
 				src: url("PixeloidSans-nR3g1.ttf");
 			}
-			h1 {
-				font-family: eightbit;
+			h2 {
+				color: white;
 			}
 			* {
+				font-family: eightbit;
 				margin: 0px;
 				border: 0px;
 			}
@@ -22,9 +23,7 @@
 				align-items: center;
 				justify-content: center;
 			}
-			.topbar h2 {
-				color: white;
-			}
+
 			.topbar {
 				display: flex;
 				position: absolute;
@@ -72,14 +71,14 @@
 			<h1 style="position: absolute; top: 45vh; left: 40vw; color: white">loading...</h1>
 		</div>
 
+		<div class="topbar">
+			<div id="fps-counter">FPS: 0</div>
+		</div>
+
 		<div id="stage">
 			<canvas hidden id="screen" width="1800" height="960" style="border: solid black 5px"></canvas>
 			<canvas id="screen2" width="450" height="240" style="border: solid black 1px"></canvas>
 			<canvas hidden id="entitiesScreen" width="3600" height="2000" style="border: solid black 5px"></canvas>
-		</div>
-
-		<div class="topbar">
-			<div id="fps-counter">FPS: 0</div>
 		</div>
 
 		<div id="buttonContainer" class="buttonContainer">
@@ -94,6 +93,11 @@
 				<input type="text" id="seedInput" placeholder="Enter seed" style="width: 120px; padding: 5px; font-family: sans-serif" />
 			</div>
 		</div>
+		<br />
+		<br />
+		<h2>Cellular Automata World Generator</h2>
+		<p>Easter Egg</p>
+		<br />
 		<script src="data.js"></script>
 		<script src="creatures.js"></script>
 		<script src="game.js"></script>
