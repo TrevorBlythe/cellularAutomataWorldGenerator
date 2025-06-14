@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>gaming</title>
+		<style>
+			@font-face {
+				font-family: eightbit;
+				src: url("PixeloidSans-nR3g1.ttf");
+			}
+			h1 {
+				font-family: eightbit;
+			}
+			* {
+				margin: 0px;
+				border: 0px;
+			}
+
+			#stage {
+				width: 900;
+				height: 480;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.topbar h2 {
+				color: white;
+			}
+			.topbar {
+				display: flex;
+				position: absolute;
+				left: 10px;
+				top: 5px;
+				width: 100vw;
+			}
+			/* Style for the FPS counter */
+			#fps-counter {
+				color: white;
+				font-family: eightbit;
+				font-size: 16px;
+				margin-left: 20px; /* Adjust spacing as needed */
+			}
+
+			body {
+				background-color: black;
+				overflow-y: hidden; /* Hide vertical scrollbar */
+				overflow-x: hidden; /* Hide horizontal scrollbar */
+			}
+			.buttonContainer {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.inv {
+				width: 900;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.inv button {
+				width: 89px;
+				height: 89px;
+				border: 1px solid orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div
+			id="loadingScreen"
+			class="loadingScreen"
+			style="position: absolute; width: 100vw; height: 100vh; background: black; z-index: 1"
+		>
+			<h1 style="position: absolute; top: 45vh; left: 40vw; color: white">loading...</h1>
+		</div>
+
+		<div id="stage">
+			<canvas hidden id="screen" width="1800" height="960" style="border: solid black 5px"></canvas>
+			<canvas id="screen2" width="450" height="240" style="border: solid black 1px"></canvas>
+			<canvas hidden id="entitiesScreen" width="3600" height="2000" style="border: solid black 5px"></canvas>
+		</div>
+
+		<div class="topbar">
+			<div id="fps-counter">FPS: 0</div>
+		</div>
+
+		<div id="buttonContainer" class="buttonContainer">
+			<button onclick="generate(mapWidth, mapHeight);fullRender();generateRandomWorld(mapWidth, mapHeight, 3, 3);">
+				regenerate
+			</button>
+			<button onclick="generate(mapWidth, mapHeight);fullRender()">clear</button>
+
+			<div style="margin-left: 20px; display: flex; align-items: center">
+				<input type="checkbox" id="useSeedCheckbox" style="margin-right: 5px" />
+				<label for="useSeedCheckbox" style="color: white; font-family: eightbit; margin-right: 10px">Use set Seed</label>
+				<input type="text" id="seedInput" placeholder="Enter seed" style="width: 120px; padding: 5px; font-family: sans-serif" />
+			</div>
+		</div>
+		<script src="data.js"></script>
+		<script src="creatures.js"></script>
+		<script src="game.js"></script>
+		<script src="character.js"></script>
+		<script src="generator.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
